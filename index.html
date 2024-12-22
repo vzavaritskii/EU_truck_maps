@@ -16,13 +16,15 @@
         }
 
         .button-container {
-            width: 300px; 
-            margin: 0 auto; 
+            width: 100%;  /* Занимает всю ширину экрана */
+            display: flex;
+            flex-direction: column;  /* Кнопки будут располагаться вертикально */
+            align-items: center;  /* Центрирует кнопки по горизонтали */
+            margin-top: 20px;  /* Отступ сверху для контейнера */
         }
 
         .button {
-            display: inline-block;
-            width: 100%;  
+            width: 300px;  /* Фиксированная ширина для кнопок */
             padding: 15px 15px;
             background-color: #008B8B; 
             color: white;
