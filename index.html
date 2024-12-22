@@ -24,8 +24,8 @@
         }
 
         .button {
-            width: 300px;  /* Фиксированная ширина для кнопок */
-            padding: 15px 15px;
+            display: inline-block;  /* Чтобы кнопки выравнивались по ширине */
+            padding: 15px 30px;  /* Отступы внутри кнопки */
             background-color: #008B8B; 
             color: white;
             font-size: 16px;
@@ -34,6 +34,7 @@
             text-align: center;
             transition: background-color 0.3s;
             margin-top: 20px;  
+            white-space: nowrap;  /* Чтобы текст не переносился на новую строку */
         }
         
         .button:hover {
